@@ -1,0 +1,45 @@
+<html>
+	<style>
+		a {
+			text-decoration: none; font-size:18;
+			font-family: daxProLight, arial, san-serif;
+			color: grey;
+			line-height: 22px;
+			text-decoration: none;
+			margin:0;
+		}
+		
+		a:hover {
+			color: #1E95D3;
+		}
+		
+		h1 {
+			font-family: daxProLight, arial, san-serif;color: grey; 
+			padding-left:30;
+			padding-top:7;
+			float:left;
+			font-size:28;
+		}
+		
+		img { float:left;}
+		
+		label {
+		    float: left;
+			width: 100px;
+			text-align:right;
+		}
+	</style>
+	<body>
+		<img src="../yf_header.gif">
+		<h1> Single Sign-On</h1>
+		<br><br><br><br><br>
+		<form action="./SSO.jsp" method="post">
+			<label for="userName">Username : </label><input name="userName"  type="text" required placeholder="johnd@aigs.co.za"/><br>
+			<label for="userPass">Password : </label><input name="userPass"  type="password" required placeholder="******"/><br>
+			<label for="redirect">Auto Login : </label><input name="redirect"  type="checkbox" checked/><br>
+			<br>
+			<input type="submit" value="Submit">
+		</form>
+	</body>
+</html>
+
